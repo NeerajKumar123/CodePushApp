@@ -35,7 +35,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Feeling Happy  today!
+          Feeling Happy  today Nitesh with Neeraj and Dua!
         </Text>
         <Text style={styles.instructions}>
           To get started, edit App.js 
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'green',
+    backgroundColor: 'white',
   },
   welcome: {
     fontSize: 20,
