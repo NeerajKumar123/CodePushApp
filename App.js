@@ -9,8 +9,12 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  TouchableOpacity
 } from 'react-native';
+
+
+import codePush from "react-native-code-push";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -39,7 +43,7 @@ export default class App extends Component {
           {instructions}
         </Text>
         <TouchableOpacity onPress={this.codeSynch}>
-          <Text style={{ color: 'white' }}>Recieved Claims</Text>
+          <Text style={{ color: 'black' }}>Check Updates</Text>
         </TouchableOpacity>
       </View>
     );
