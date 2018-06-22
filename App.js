@@ -9,11 +9,8 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View,
-  TouchableOpacity
+  View
 } from 'react-native';
-
-import codePush from "react-native-code-push";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -22,24 +19,19 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-
 export default class App extends Component {
-  onButtonPress() {
-    codePush.sync({
-      updateDialog: true,
-      installMode: codePush.InstallMode.IMMEDIATE
-    });
-  }
-
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.boxContainer}>
-          <Text> Hello World</Text>
-        </View>
-        <TouchableOpacity onPress={this.onButtonPress}>
-          <Text style={styles.doneButtonText}>Check for updates</Text>
-        </TouchableOpacity>
+        <Text style={styles.welcome}>
+          Welcome to React Native!
+        </Text>
+        <Text style={styles.instructions}>
+          To get started, edit App.js
+        </Text>
+        <Text style={styles.instructions}>
+          {instructions}
+        </Text>
       </View>
     );
   }
@@ -48,25 +40,18 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'white',
+    backgroundColor: '#F5FCFF',
   },
-  boxContainer: {
-    flex: 1,
-    backgroundColor: 'red',
-  },
-
-  doneButtonText: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: 'rgba(26,127,172,1.0)',
-    fontWeight: '800',
-    textAlign: 'center',
+  welcome: {
     fontSize: 20,
-    textAlignVertical: 'center',
-    backgroundColor: 'red',
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
   },
 });
