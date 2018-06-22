@@ -35,7 +35,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Feeling Happy  today Nitesh with Neeraj and Dua!
+          Hello World!
         </Text>
         <Text style={styles.instructions}>
           To get started, edit App.js 
