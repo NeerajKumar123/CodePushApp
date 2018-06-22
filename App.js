@@ -44,7 +44,7 @@ export default class App extends Component {
           {instructions}
         </Text>
         <TouchableOpacity onPress={this.onButtonPress}>
-                <Text>Check for updates</Text>
+                <Text>Check for updates Neeraj Prajapati here</Text>
             </TouchableOpacity>
       </View>
     );
