@@ -10,8 +10,7 @@ import {
   StyleSheet,
   Text,
   View,
-  TouchableOpacity,
-  Button
+  TouchableOpacity
 } from 'react-native';
 
 import codePush from "react-native-code-push";
@@ -27,24 +26,20 @@ const instructions = Platform.select({
 export default class App extends Component {
   onButtonPress() {
     codePush.sync({
-        updateDialog: true,
-        installMode: codePush.InstallMode.IMMEDIATE
+      updateDialog: true,
+      installMode: codePush.InstallMode.IMMEDIATE
     });
-}
+  }
 
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Hello Neeraj
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js 
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-        <Button onPress={this.onButtonPress}>Check for Update</Button>
+        <View style={styles.boxContainer}>
+          <Text> Hello World</Text>
+        </View>
+        <TouchableOpacity onPress={this.onButtonPress}>
+          <Text style={styles.doneButtonText}>Check for updates</Text>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -53,18 +48,25 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'white',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  boxContainer: {
+    flex: 1,
+    backgroundColor: 'red',
   },
-  instructions: {
+
+  doneButtonText: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: 'rgba(26,127,172,1.0)',
+    fontWeight: '800',
     textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+    fontSize: 20,
+    textAlignVertical: 'center',
+    backgroundColor: 'red',
   },
 });
