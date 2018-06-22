@@ -14,7 +14,6 @@ import {
 } from 'react-native';
 
 import codePush from "react-native-code-push";
-import CodePush from 'react-native-code-push';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -25,45 +24,28 @@ const instructions = Platform.select({
 
 
 export default class App extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = { logs: [] };
-  }
   onButtonPress() {
-    this.setState({ logs: ['Update Statred at' + new Date().getTime()] });
     codePush.sync({
-      updateDialog: true,
-      installMode: codePush.InstallMode.IMMEDIATE
-    }, (status) => {
-      for (var key in CodePush.SyncStatus) {
-        if (status === CodePush.SyncStatus[key]) {
-          this.setState(prevState => ({ logs: [...prevState.logs, key.replace(/_/g, '')] }));
-          break;
-
-        }
-      }
+        updateDialog: true,
+        installMode: codePush.InstallMode.IMMEDIATE
     });
-  }
+}
 
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Hello World!
+          Hello Neeraj
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit App.js
+          To get started, edit App.js 
         </Text>
         <Text style={styles.instructions}>
           {instructions}
         </Text>
         <TouchableOpacity onPress={this.onButtonPress}>
-          <Text>Check for updates</Text>
-        </TouchableOpacity>
-        <Text style={styles.instructions}>
-          {JSON.stringify(this.state.logs)}
-        </Text>
+                <Text>Check for updates</Text>
+            </TouchableOpacity>
       </View>
     );
   }
@@ -80,7 +62,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
-    backgroundColor:'red'
   },
   instructions: {
     textAlign: 'center',
