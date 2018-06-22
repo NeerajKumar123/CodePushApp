@@ -36,6 +36,18 @@ export default class App extends Component {
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
+        {/* <Text style={styles.welcome}>
+          Edited using codePush!
+        </Text>
+        <Text style={styles.welcome}>
+          Feeling frustated with Karan Dua!
+        </Text>
+        <Text style={styles.welcome}>
+          Anshita is scolding Dua for the same!
+        </Text>
+        <Text style={styles.welcome}>
+          Now both frustating me with their ill-logical conversation!
+        </Text> */}
         <Text style={styles.instructions}>
           To get started, edit App.js
         </Text>
@@ -61,6 +73,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+    color: 'red',
   },
   instructions: {
     textAlign: 'center',
