@@ -44,7 +44,7 @@ export default class App extends Component {
           {instructions}
         </Text>
         <TouchableOpacity onPress={this.onButtonPress}>
-                <Text>Check for updates Neeraj Prajapati here</Text>
+                <Text>Check for updates Neeraj Prajapati here dua bhi hai sath me abhi</Text>
             </TouchableOpacity>
       </View>
     );
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'yellow',
+    backgroundColor: 'white',
   },
   welcome: {
     fontSize: 20,
