@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+    backgroundColor:'red'
   },
   instructions: {
     textAlign: 'center',
