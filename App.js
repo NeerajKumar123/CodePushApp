@@ -10,7 +10,8 @@ import {
   StyleSheet,
   Text,
   View,
-  TouchableOpacity
+  TouchableOpacity,
+  Button
 } from 'react-native';
 
 import codePush from "react-native-code-push";
@@ -43,9 +44,7 @@ export default class App extends Component {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
-        <TouchableOpacity onPress={this.onButtonPress}>
-                <Text>Check for updates Neeraj Prajapati here dua bhi hai sath me abhi</Text>
-            </TouchableOpacity>
+        <Button onPress={this.onButtonPress}>Check for Update</Button>
       </View>
     );
   }
