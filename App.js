@@ -20,6 +20,12 @@ const instructions = Platform.select({
 });
 
 export default class App extends Component {
+
+  codeSynch() {
+    codePush.sync({ updateDialog: true, installMode: codePush.InstallMode.IMMEDIATE });
+  }
+
+
   render() {
     return (
       <View style={styles.container}>
@@ -32,6 +38,9 @@ export default class App extends Component {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <TouchableOpacity onPress={this.codeSynch}>
+          <Text style={{ color: 'white' }}>Recieved Claims</Text>
+        </TouchableOpacity>
       </View>
     );
   }
