@@ -1,0 +1,129 @@
+[
+  {
+    "SupplierId": 13,
+    "SupplierName": "Bajaj Allianz",
+    "DetailedName": null,
+    "SeqNo": 6
+  },
+  {
+    "SupplierId": 16,
+    "SupplierName": "Bharti Axa",
+    "DetailedName": null,
+    "SeqNo": 1
+  },
+  {
+    "SupplierId": 4,
+    "SupplierName": "Cholamandalam",
+    "DetailedName": null,
+    "SeqNo": 2
+  },
+  {
+    "SupplierId": 14,
+    "SupplierName": "Future Generali",
+    "DetailedName": null,
+    "SeqNo": 6
+  },
+  {
+    "SupplierId": 2,
+    "SupplierName": "HDFC ERGO",
+    "DetailedName": null,
+    "SeqNo": 6
+  },
+  {
+    "SupplierId": 3,
+    "SupplierName": "ICICI Lombard",
+    "DetailedName": null,
+    "SeqNo": 3
+  },
+  {
+    "SupplierId": 5,
+    "SupplierName": "Iffco Tokio",
+    "DetailedName": null,
+    "SeqNo": 6
+  },
+  {
+    "SupplierId": 21,
+    "SupplierName": "L&T",
+    "DetailedName": null,
+    "SeqNo": 6
+  },
+  {
+    "SupplierId": 28,
+    "SupplierName": "Liberty General Insurance",
+    "DetailedName": null,
+    "SeqNo": 6
+  },
+  {
+    "SupplierId": 6,
+    "SupplierName": "National Insurance",
+    "DetailedName": null,
+    "SeqNo": 6
+  },
+  {
+    "SupplierId": 12,
+    "SupplierName": "New India Assurance",
+    "DetailedName": null,
+    "SeqNo": 4
+  },
+  {
+    "SupplierId": 8,
+    "SupplierName": "Oriental",
+    "DetailedName": null,
+    "SeqNo": 6
+  },
+  {
+    "SupplierId": 1,
+    "SupplierName": "Reliance",
+    "DetailedName": null,
+    "SeqNo": 6
+  },
+  {
+    "SupplierId": 10,
+    "SupplierName": "Royal Sundaram",
+    "DetailedName": null,
+    "SeqNo": 6
+  },
+  {
+    "SupplierId": 22,
+    "SupplierName": "SBI",
+    "DetailedName": null,
+    "SeqNo": 6
+  },
+  {
+    "SupplierId": 15,
+    "SupplierName": "Shriram General Insurance",
+    "DetailedName": null,
+    "SeqNo": 9
+  },
+  {
+    "SupplierId": 9,
+    "SupplierName": "Tata AIG",
+    "DetailedName": null,
+    "SeqNo": 9
+  },
+  {
+    "SupplierId": 11,
+    "SupplierName": "United Insurance",
+    "DetailedName": null,
+    "SeqNo": 9
+  },
+  {
+    "SupplierId": 17,
+    "SupplierName": "Universal Sompo",
+    "DetailedName": null,
+    "SeqNo": 9
+  },
+  {
+    "SupplierId": 29,
+    "SupplierName": "MAGMA HDI",
+    "DetailedName": null,
+    "SeqNo": 9
+  }
+  ,
+  {
+    "SupplierId": 35,
+    "SupplierName": "Kotak",
+    "DetailedName": null,
+    "SeqNo": 9
+  }
+]
