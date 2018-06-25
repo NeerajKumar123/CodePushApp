@@ -21,6 +21,7 @@ const instructions = Platform.select({
     'Cmd+D or shake for dev menu',
   android: 'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
+  changes:'This change has been pushed via CodePush',  
 });
 
 export default class App extends Component {
@@ -36,7 +37,7 @@ export default class App extends Component {
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
-        {/* <Text style={styles.welcome}>
+        <Text style={styles.welcome}>
           Edited using codePush!
         </Text>
         <Text style={styles.welcome}>
@@ -47,7 +48,7 @@ export default class App extends Component {
         </Text>
         <Text style={styles.welcome}>
           Now both frustating me with their ill-logical conversation!
-        </Text> */}
+        </Text>
         <Text style={styles.instructions}>
           To get started, edit App.js
         </Text>
