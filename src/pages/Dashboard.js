@@ -92,8 +92,7 @@ export default class Pin extends Component {
       { name: 'TRAVEL', code: '#34495e',},
       { name: 'TWO WHEELER', code: '#16a085',  },
       { name: 'CANCER', code: '#27ae60',  },
-      { name: 'MY ACCOUNT', code: 'yellow', },
-      // { name: 'MY ACCOUNT', code: '#2980b9', },
+      { name: 'MY ACCOUNT', code: '#2980b9', },
     ]
 
     return (
