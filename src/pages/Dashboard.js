@@ -133,9 +133,9 @@ export default class Pin extends Component {
             )}
           />
         </View>
-        <View style={{backgroundColor:'orange',height:50,alignSelf:'stretch'}}>
+        <View style={{backgroundColor:'white',height:40,alignSelf:'stretch', justifyContent:'flex-end'}}>
             <TouchableOpacity onPress={this.onButtonPress}>
-                <Text>Check Neeta</Text>
+                <Text style = {{textAlign:'center',textAlignVertical:'center',backgroundColor:'white',height:40,paddingTop:10, fontSize:15,fontWeight:'800'}}>Check Update</Text>
             </TouchableOpacity>
         </View>
       </View>

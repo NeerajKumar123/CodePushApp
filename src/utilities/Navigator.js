@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Router,Stack, Scene } from 'react-native-router-flux';
 import Dashboard from '../pages/Dashboard'
 import Login from '../pages/Login'
-import ClaimsList from '../pages/ClaimsList'
-import ClaimDetails from '../pages/ClaimDetails'
 import PreQuote from '../pages/PreQuote'
 import QuotesPage from '../pages/QuotesPage'
 import TWLandingPage from '../pages/TWLandingPage'
@@ -23,12 +21,10 @@ export default class Navigator extends Component{
       <Router>
           <Stack key="root" hideNavBar={false} barButtonIconStyle={{ tintColor: 'green' }}>
             <Scene key="dashboard" component={Dashboard} title="" hideNavbar={false}  backButtonTintColor ={{ tintColor: 'red' }} navTransparent={true} initial={true} />
-            <Scene key="claimList" component={ClaimsList} title="All Claims" hideNavbar={false} initial={false} />
             <Scene key="prequote" component={PreQuote} title="PreQuote" hideNavbar={false} initial={false} />
             <Scene key="login" component={Login} title="login" hideNavbar={false}  initial={false} />
             <Scene key="quotes" component={QuotesPage} title="Quotes" hideNavbar={false} initial={false} />
             <Scene key="twlandingPage" component={TWLandingPage} title="" hideNavbar={false} initial={false} />
-            <Scene key="claimDetails" component={ClaimDetails} title="Details Page" hideNavbar={false}  initial={false} />
             <Scene key="carLandingPage" component={CarLandingPage} title="" hideNavbar={false}  initial={false}/>
             <Scene key="carRegistraionDetails" component={CarRegistraionDetails} title="Registration Details" hideNavbar={false}  initial={false}/>
             <Scene key="carQuotes" component={CarQuotes} title="" hideNavbar={false}  initial={false}  modal/> 

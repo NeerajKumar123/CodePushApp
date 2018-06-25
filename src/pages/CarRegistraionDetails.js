@@ -22,7 +22,6 @@ import {
 import { Actions } from 'react-native-router-flux';
 import PBTextInput from '../components/PBTextInput';
 import ToggleSwitch from 'toggle-switch-react-native';
-import { Thumbnail } from 'native-base';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import RNPickerSelect from 'react-native-picker-select';
 import PickerComponent from '../components/PickerComponent';
@@ -549,12 +548,12 @@ const styles = StyleSheet.create({
     },
 
     ButtonContainer: {
-        width: 375,
         height: 50,
         flexDirection: 'row',
         backgroundColor: 'rgba(222,118,80,1.0)',
         justifyContent: 'center',
         alignItems: 'center',
+        alignSelf:'stretch',
         bottom: 0,
         paddingLeft: 10,
         paddingRight: 10
