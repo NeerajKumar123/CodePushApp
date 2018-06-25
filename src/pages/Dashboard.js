@@ -85,14 +85,14 @@ export default class Pin extends Component {
   render() {
     let width = Dimensions.get('window').width;
     const items = [
-      { name: 'TERM LIFE', code: '#1abc9c'},
+      { name: 'TERM LIFE INSURANCE', code: '#1abc9c'},
       { name: 'HEALTH', code: '#2ecc71'},
       { name: 'LIFE INSURANCE - INVESTMENT', code: '#3498db'},
       { name: 'CAR', code: '#9b59b6' },
       { name: 'TRAVEL', code: '#34495e',},
       { name: 'TWO WHEELER', code: '#16a085',  },
       { name: 'CANCER', code: '#27ae60',  },
-      { name: 'MY ACCOUNT', code: 'red', },
+      { name: 'MY ACCOUNT', code: 'yellow', },
       // { name: 'MY ACCOUNT', code: '#2980b9', },
     ]
 
