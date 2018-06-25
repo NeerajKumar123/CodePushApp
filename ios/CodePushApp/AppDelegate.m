@@ -17,16 +17,16 @@
 {
   NSURL *jsCodeLocation;
 
-#ifdef DEBUG
-  jsCodeLocation = [CodePush bundleURL];
-#else
-  jsCodeLocation = [CodePush bundleURL];
-#endif
-//    #ifdef DEBUG
-//        jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
-//    #else
-//        jsCodeLocation = [CodePush bundleURL];
-//    #endif
+// #ifdef DEBUG
+//   jsCodeLocation = [CodePush bundleURL];
+// #else
+//   jsCodeLocation = [CodePush bundleURL];
+// #endif
+   #ifdef DEBUG
+       jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+   #else
+       jsCodeLocation = [CodePush bundleURL];
+   #endif
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"CodePushApp"

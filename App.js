@@ -40,7 +40,7 @@ export default class App extends Component {
         <Text style={styles.welcome}>
           Edited using codePush!
         </Text>
-        {/* <Text style={styles.welcome}>
+        <Text style={styles.welcome}>
           Feeling frustated with Karan Dua!
         </Text>
         <Text style={styles.welcome}>
@@ -48,7 +48,7 @@ export default class App extends Component {
         </Text>
         <Text style={styles.welcome}>
           Now both frustating me with their ill-logical conversation!
-        </Text> */}
+        </Text>
         <Text style={styles.instructions}>
           To get started, edit App.js
         </Text>
