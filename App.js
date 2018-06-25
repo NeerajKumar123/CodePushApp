@@ -37,10 +37,10 @@ export default class App extends Component {
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
-        {/* <Text style={styles.welcome}>
+        <Text style={styles.welcome}>
           Edited using codePush!
         </Text>
-        <Text style={styles.welcome}>
+        {/* <Text style={styles.welcome}>
           Feeling frustated with Karan Dua!
         </Text>
         <Text style={styles.welcome}>
