@@ -50,11 +50,15 @@ export default class Login extends Component {
   }
 
   dontKnowRegNoPressed() {
-    Alert.alert('Dont know Reg Number Clikced')
+    Alert.alert('Dont know Reg Number')
+  }
+
+  newCarClicked(){
+  Alert.alert('Got new Car Clicked.')
   }
 
   uploadMIR() {
-    Alert.alert('uploadMIR')
+    Alert.alert('Under Development')
   }
 
   createvisit() {
@@ -121,7 +125,7 @@ export default class Login extends Component {
         <View style={styles.container}>
           <View style={styles.WelcomeTextContainer}>
             <Text style={styles.WelcomeTextBlackBold}>Car Insurance Made Easy{"\n"}
-              <Text style={[styles.WelcomeTextBlackBold, styles.WelcomeTextGrayNormal]}>Book in less than 3 minutes{"\n"}Self Video Inspection for break in cases{"\n"}Plans starting from Rs. 800/month upto 80% discount
+              <Text style={[styles.WelcomeTextBlackBold, styles.WelcomeTextGrayNormal]}>{"\n"}Book in less than 3 minutes{"\n"}{"\n"}Self Video Inspection for break in cases{"\n"}{"\n"}Plans starting from Rs. 800/month upto 80% discount
             </Text>
             </Text>
           </View>
@@ -133,38 +137,33 @@ export default class Login extends Component {
               onChangeText={(registrationNo) => this.setState({ registrationNo })}
               placeholder="Enter Registration Number."
             />
-
             <TouchableOpacity style={styles.button} onPress={this.getDetailClicked}>
               <View>
-                <Text style={styles.buttonText}>Get Details</Text>
+                <Text style={styles.buttonText}>GET DETAILS</Text>
               </View>
             </TouchableOpacity>
-
           </View>
           <View style={styles.LinksContainer}>
-            <Button
-              onPress={this.dontKnowRegNoPressed}
-              title="Don't know registration number? Click here"
-              color='rgba(87,149,251,1.0)'
-              accessibilityLabel="Don't know registration number? Click here"
-            />
-            <Button style={styles.LinksText}
-              onPress={this.dontKnowRegNoPressed}
-              title="Got a new car? Awesome! Click here"
-              color='rgba(87,149,251,1.0)'
-              accessibilityLabel="Got a new car? Awesome! Click here"
-            />
+          <TouchableOpacity onPress={this.dontKnowRegNoPressed}>
+                    <View style={{marginTop:10,marginBottom:10}}>
+                        <Text style={{color:'rgba(87,149,251,1.0)', fontSize:13,fontWeight:'600'}}>Don't know registration number? Click here.</Text>
+                    </View>
+          </TouchableOpacity>
+           <TouchableOpacity onPress={this.newCarClicked}>
+                    <View style={{marginTop:10,marginBottom:10}}>
+                        <Text style={{color:'rgba(87,149,251,1.0)', fontSize:13,fontWeight:'600'}}>Got a new car? Awesome! Click here.</Text>
+                    </View>
+            </TouchableOpacity>
           </View>
           <View style={styles.MIRContainer}>
-            <View style={{ backgroundColor: '#000', height: 1, alignSelf: 'stretch' }}>
+            <View style={{ backgroundColor: 'grey', height: 1.0, alignSelf: 'stretch', marginLeft:20,marginRight:20 }}>
             </View>
-            <Button style={styles.LinksText}
-              onPress={this.uploadMIR}
-              title="Have policy/RC copy handy with you?"
-              color='#A9A9A9'
-              accessibilityLabel="Have policy/RC copy handy with you?"
-            />
-            <View style={{ backgroundColor: '#000', height: 1, alignSelf: 'stretch' }}>
+            <TouchableOpacity onPress={this.uploadMIR}>
+                    <View style={{marginTop:10,marginBottom:10}}>
+                        <Text style={{color:'#A9A9A9', fontSize:13,fontWeight:'600'}}>Have policy/RC copy handy with you?</Text>
+                    </View>
+              </TouchableOpacity>
+            <View style={{ backgroundColor: 'grey', height: 1.0, alignSelf: 'stretch', marginLeft:20,marginRight:20 }}>
             </View>
           </View>
         </View>
@@ -195,7 +194,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: 'black',
     fontWeight: '600',
-    fontSize: 10
+    fontSize: 13
   },
   WelcomeTextGrayNormal: {
     color: '#A9A9A9',
@@ -234,9 +233,9 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: 'white',
-    fontSize: 15,
+    fontSize: 13,
     textAlign: 'center',
-    fontWeight: '600',
+    fontWeight: '800',
   },
   LinksContainer: {
     flex: 1,
@@ -251,6 +250,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: 'white',
     alignSelf: 'stretch',
-  },
-
+  }
 });

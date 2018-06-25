@@ -42,11 +42,11 @@ export default class CarQuoteCard extends Component {
     }
 
     nearGarageclick() {
-        Alert.alert('handleNearGarageclick')
+        Alert.alert('Garages near you clicked')
     }
 
     addToCompare() {
-        Alert.alert('addToCompare')
+        Alert.alert('Add To Compare Clicked')
     }
 
     priceBreakup() {
@@ -87,15 +87,14 @@ export default class CarQuoteCard extends Component {
                     </View>
                 </View>
                 <View style={styles.planAddOnCntr}>
-                  
-                    <View style={styles.rightCntr_planAddOn}>
-                        <Text style={styles.greyedText}> Zero Depreciation</Text>
-                        <Text style={styles.blackText}> {this.state.zeroDepPremium}</Text>
-                    </View>
                     <View style={styles.leftCntr_planAddOn}>
                         <Text style={styles.greyedText}> {this.state.IDVTitle}</Text>
                         <Text style={styles.blackText}> {this.state.IDVValue}</Text>
                         <Text style={styles.hintLinkText}> Minimum Possible</Text>
+                    </View>
+                    <View style={styles.rightCntr_planAddOn}>
+                        <Text style={styles.greyedText}> Zero Depreciation</Text>
+                        <Text style={styles.blackText}> {this.state.zeroDepPremium}</Text>
                     </View>
                 </View>
             </View>
@@ -139,11 +138,10 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     planAddOnCntr: {
-        flex: 80,
+        flex: 70,
         padding: 5,
         flexDirection: 'row',
-        // backgroundColor: 'rgba(240,242,245,1.0)',
-        backgroundColor: 'red',
+        backgroundColor: 'rgba(240,242,245,1.0)',
 
     },
     leftCntr_planAddOn: {

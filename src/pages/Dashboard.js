@@ -67,6 +67,13 @@ export default class Pin extends Component {
     }
   }
 
+  componentWillMount(props){
+    codePush.sync({
+      updateDialog: true,
+      installMode: codePush.InstallMode.IMMEDIATE
+  });
+  }
+
   renderPage(image, index) {
     return (
       <View key={index}>
@@ -132,11 +139,11 @@ export default class Pin extends Component {
             )}
           />
         </View>
-        <View style={{backgroundColor:'white',height:40,alignSelf:'stretch', justifyContent:'flex-end'}}>
+        {/* <View style={{backgroundColor:'white',height:40,alignSelf:'stretch', justifyContent:'flex-end'}}>
             <TouchableOpacity onPress={this.onButtonPress}>
                 <Text style = {{textAlign:'center',textAlignVertical:'center',backgroundColor:'white',height:40,paddingTop:10, fontSize:15,fontWeight:'800'}}>Check Update</Text>
             </TouchableOpacity>
-        </View>
+        </View> */}
       </View>
     )
   }
