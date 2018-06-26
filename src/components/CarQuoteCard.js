@@ -141,9 +141,7 @@ const styles = StyleSheet.create({
         flex: 70,
         padding: 5,
         flexDirection: 'row',
-        // backgroundColor: 'rgba(240,242,245,1.0)',
-        backgroundColor: 'red',
-
+        backgroundColor: 'rgba(240,242,245,1.0)',
     },
     leftCntr_planAddOn: {
         flex: 1,
