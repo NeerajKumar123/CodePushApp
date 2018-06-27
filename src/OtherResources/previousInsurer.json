@@ -1,5 +1,11 @@
 [
   {
+    "SupplierId": 347384,
+    "SupplierName": " Allianz newly added",
+    "DetailedName": null,
+    "SeqNo": 6
+  },
+  {
     "SupplierId": 13,
     "SupplierName": "Bajaj Allianz",
     "DetailedName": null,
