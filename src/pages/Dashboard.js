@@ -67,6 +67,8 @@ export default class Pin extends Component {
     }
   }
 
+
+
   // componentWillMount(props){
   //   codePush.sync({
   //     updateDialog: true,
