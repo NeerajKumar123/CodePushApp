@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
         alignItems: 'center',
         alignSelf: 'stretch',
-        backgroundColor: 'red'
+        backgroundColor: 'white'
     },
 
     scrollbleContainer:{
